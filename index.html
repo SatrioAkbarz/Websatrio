@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Upload and Search</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Upload File</h1>
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <input type="file" name="fileToUpload" id="fileToUpload">
+        <input type="submit" value="Upload File" name="submit">
+    </form>
+
+    <h1>Search Files</h1>
+    <form action="search.php" method="get">
+        <input type="text" name="query" placeholder="Search file name...">
+        <input type="submit" value="Search">
+    </form>
+
+    <div id="searchResults">
+        <!-- Search results will appear here -->
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
